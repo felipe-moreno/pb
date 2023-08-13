@@ -5,9 +5,10 @@ import logging
 
 logging.basicConfig(filename="log.txt", 
                     format='%(asctime)s %(message)s', 
-					filemode='w',
+					filemode='a',
                     level=logging.INFO)
 logger = logging.getLogger()
+
 driver = webdriver.Chrome()
 
 driver.get("https://the-internet.herokuapp.com/challenging_dom")
@@ -22,5 +23,7 @@ table = driver.find_elements(By.XPATH, '/html/body/div/div/div/div/div/div/table
 for element in table:
     logger.info(element.text)
     element.click
+
+logger.info('\n')
 
 driver.quit()
