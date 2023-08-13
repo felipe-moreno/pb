@@ -1,0 +1,23 @@
+Cenários de Teste
+
+Imagina que você iniciou em uma equipe com um projeto do Zero. A proposta do projeto é a criação de uma solução
+para realizar compra de imóveis através de sistemas que facilitarão a comunicação de imobiliárias, clientes e bancos. A
+arquitetura está sendo desenhada a partir de solução de microsserviços e WebSites, está sendo mapeado integrações
+com sistemas externos, espera-se volume alto de operação uma vez que o sistema irá operar em todo o território
+Brasileiro, o cliente está bem próximo do projeto para levantamento de requisitos.
+
+1.Dado esse cenário, como você iniciaria uma estratégia de teste?
+    Através do levantamento de requisitos, entender o funcionamento do sistema parar definir as estratégias
+
+2.Quais abordagens de teste você consideraria?
+    Serão necessários testes requisições dos microsserviços para as aplicações externas e também de tela para os WebSites
+
+3.Como você trabalharia com diferentes tipos/níveis de teste?
+    Testes unitários, testes de integração, testes de aceitação, testes de desempenho
+    Acredito que inicialmente me daria melhor com testes unitários e de aceitação
+
+4. Quais ferramentas você consideraria usar?
+    Pelo meu conhecimento, automações com Python utilizando requests e selenium
+
+5.Como você se imagina atuando nessa equipe?
+    Me imagino participando de todo o projeto, desde o início, acompanhando no levantamento de requisitos, até a parte de testes lado a lado com o desenvolvimento e depois da entrega
