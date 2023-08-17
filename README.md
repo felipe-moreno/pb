@@ -4,6 +4,7 @@ Automações desenvolvidas em Python, será necessário baixar os arquivos para 
 
 - Abrir pasta que contém os arquivos no terminal
 - pip install selenium
+- pip install requests
 - pip install jsonschema
 - python3 Case1.py
   - Verificar arquivo de log
