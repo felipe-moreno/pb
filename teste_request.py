@@ -1,45 +1,13 @@
 import requests
 from jsonschema import validate
 import jsonschema
+import Textos.postagens as j
 
 class requisicao():
     
     def __init__(self,endereco) -> None:
         self.endereco = endereco
-        self.schema = {
-            "type": "object",
-            "properties": {
-                "id": {"type": "number"},
-                "name": {"type": "string"},
-                "username": {"type": "string"},
-                "address": {
-                    "type": "object",
-                    "properties": {
-                        "street": {"type": "string"},
-                        "suite": {"type": "string"},
-                        "city": {"type": "string"},
-                        "zipcode": {"type": "string"},
-                        "geo": {
-                            "type": "object",
-                            "properties": {
-                                "lat": {"type": "string"},
-                                "lng": {"type": "string"},
-                            }
-                        }
-                    }
-                },
-                "phone": {"type": "string"},
-                "website": {"type": "string"},
-                "company": {
-                    "type": "object",
-                    "properties": {
-                        "name": {"type": "string"},
-                        "catchPhrase": {"type": "string"},
-                        "bs": {"type": "string"},
-                    }
-                },
-            },
-        }
+        self.schema = j.json_schema()
 
 
     def validar_get(self):
@@ -50,6 +18,7 @@ class requisicao():
         else:
             print (response)
             print ('Falha na comunicação GET')
+        print('')
         
 
     def validar_post(self, json):
@@ -60,6 +29,7 @@ class requisicao():
         else:
             print (response)
             print ('Falha na comunicação POST')
+        print('')
 
 
     def validar_put(self, json):
@@ -70,6 +40,7 @@ class requisicao():
         else:
             print (response)
             print ('Falha na comunicação PUT')
+        print('')
 
 
     def validar_delete(self):
@@ -80,6 +51,7 @@ class requisicao():
         else:
             print (response)
             print ('Falha na comunicação DELETE')
+        print('')
 
 
     def get_user(self):
@@ -92,3 +64,4 @@ class requisicao():
             print ('Json ok.')
         except jsonschema.ValidationError:
             print ('Json com erro.')
+        print('')
