@@ -7,6 +7,6 @@ Automações desenvolvidas em Python, será necessário baixar os arquivos para 
 - pip install requests
 - pip install jsonschema
 - python3 Case1.py
-  - Verificar arquivo de log
+  - Respostas são registradas no console
 - python3 Case2.py
-  - Verificar retorno
+  - Respostas são registradas no console
