@@ -24,6 +24,8 @@ class url():
                 print('Botao {} ok.'.format(i))
             else:
                 print('Botao nao mudou.')
+        
+        print('')
 
 
     def clicar_edit_delete(self):
@@ -98,6 +100,8 @@ class url():
                 print('Botao {} alterou o Canvas, portanto está funcionando.'.format(i))
             else:
                 print('Botao {} não alterou o Canvas, portanto não está funcionando.'.format(i))
+
+        print('')
 
 
     def sair(self):
